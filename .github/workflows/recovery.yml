@@ -31,7 +31,6 @@ jobs:
 
        - name: Initializing environment
          run: |
-            docker rmi `docker images -q` || true
             git config --global user.name "mastersenpai05"
             git config --global user.email "pampangavergil0405@gmail.com"         
             sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php* 
